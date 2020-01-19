@@ -277,7 +277,7 @@
             "examples":
               [ { "title": "Get an element's rendered status",
                   "body":
-                    [ "let isRendered = $w.rendered(\"myElement\");  // true" ],
+                    [ "let isRendered = $w.rendered(\"#myElement\");  // true" ],
                   "extra":
                     {  } },
                 { "title": "Check whether an element exists before selecting it and running code",
