@@ -272,7 +272,7 @@
                 " which is not currently showing.",
                 "",
                 " `rendered()` is useful for running code from the <a href=\"https://support.wix.com/en/article/corvid-working-in-the-code-panel#page-and-site-tabs-1\" target=\"_blank\">Site tab</a> on elements that exist ",
-                " on some, but not all, pages on your site. You can prevent errors by using `rendered()` to check whether the element exists before running the code." ],
+                " on some, but not all, pages on your site. You can prevent errors by using `rendered()` to check whether the element exists before running code." ],
             "links": [],
             "examples":
               [ { "title": "Get an element's rendered status",
@@ -290,7 +290,7 @@
                       "    console.log(\"Selected element does not exist on this page\");",
                       "}  " ],
                   "extra":
-                    { "description": "We added code to the Site tab to define the text of a text element that exists on most pages of our site. We first check if the element exists on the current page before running the code." } } ],
+                    { "description": "In this example, we added code to the Site tab to define the text of a text element that exists on most pages of our site. We first check if the element exists on the current page before running the code." } } ],
             "extra":
               {  } },
         "extra":
