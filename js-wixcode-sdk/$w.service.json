@@ -130,8 +130,7 @@
         "extra":
           {  } },
       { "name": "onReady",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "initFunction",
@@ -246,7 +245,56 @@
               {  } },
         "extra":
           { "notes":
-              [ "Because `onReady()` code may be run twice, you need to be aware that if your\n `onReady()` code causes a side effect, such as inserting an item into a collection,\n that side effect might happen twice. To avoid a side effect from happening twice,\n use the [`wixWindow.rendering.env`](wix-window.rendering.html#env) to determine \n where your code is being executed." ] } } ],
+              [ "Because `onReady()` code may be run twice, you need to be aware that if your\n `onReady()` code causes a side effect, such as inserting an item into a collection,\n that side effect might happen twice. To avoid a side effect from happening twice,\n use the [`wixWindow.rendering.env`](wix-window.rendering.html#env) to determine \n where your code is being executed." ] } },
+      { "name": "rendered",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "elementId",
+              "type": "string",
+              "doc": "The ID of the element to check." } ],
+        "ret":
+          { "type": "boolean",
+            "doc": "`true` if the element is rendered on the current page." },
+        "locations":
+          [ { "lineno": 165,
+              "filename": "wixCode.es6" } ],
+        "docs":
+          { "summary": "Indicates if an element is currently in the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction\" target=\"_blank\">DOM structure</a> of the current page.",
+            "description":
+              [ "If `rendered` returns `true`, the element is in the current DOM structure and",
+                " can be used.",
+                "",
+                " If `rendered` returns `false`, the element is not in the current DOM structure.",
+                "",
+                " An element might not be in the DOM if it is in a [slide]($w.Slide.html) or a [state]($w.State.html)",
+                " which is not currently showing.",
+                "",
+                " `rendered()` is useful for running code from the <a href=\"https://support.wix.com/en/article/corvid-working-in-the-code-panel#page-and-site-tabs-1\" target=\"_blank\">Site tab</a> on elements that exist ",
+                " on some, but not all, pages on your site. You can prevent errors by using `rendered()` to check whether the element exists before running the code." ],
+            "links": [],
+            "examples":
+              [ { "title": "Get an element's rendered status",
+                  "body":
+                    [ "let isRendered = $w.rendered(\"myElement\");  // true" ],
+                  "extra":
+                    {  } },
+                { "title": "Check whether an element exists before selecting it",
+                  "body":
+                    [ "// Site code",
+                      "",
+                      "if($w.rendered(\"#myTextElement\")) {",
+                      "    $w(\"#myTextElement\").text = \"Some text\";",
+                      "} else {",
+                      "    console.log(\"Selected element does not exist on this page\");",
+                      "}  " ],
+                  "extra":
+                    { "description": "In this example, we added code to the Site tab to set the text of a text element that exists on most pages of our site. We set the text only after checking whether the element exists on the page." } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
   "callbacks":
     [ { "name": "EventHandler",
         "labels": [],

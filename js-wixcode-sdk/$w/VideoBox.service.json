@@ -1,14 +1,15 @@
-{ "name": "VerticalMenu",
+{ "name": "VideoBox",
   "memberOf": "$w",
   "mixes":
     [ "$w.Element",
       "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "new" ],
   "location":
-    { "lineno": 11,
-      "filename": "VerticalMenu.es6" },
+    { "lineno": 6,
+      "filename": "VideoBox.es6" },
   "docs":
-    { "summary": "A vertical site menu.",
+    { "summary": "Lets you display your videos with creative frames and graphic overlays.",
       "links": [],
       "examples": [],
       "extra":
