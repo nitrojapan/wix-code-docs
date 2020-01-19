@@ -263,10 +263,10 @@
         "docs":
           { "summary": "Indicates if an element is currently in the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction\" target=\"_blank\">DOM structure</a> of the current page.",
             "description":
-              [ "If `rendered` returns `true`, the element is in the current DOM structure and",
+              [ "If `rendered()` returns `true`, the element is in the current DOM structure and",
                 " can be used.",
                 "",
-                " If `rendered` returns `false`, the element is not in the current DOM structure.",
+                " If `rendered()` returns `false`, the element is not in the current DOM structure.",
                 "",
                 " An element might not be in the DOM if it is in a [slide]($w.Slide.html) or a [state]($w.State.html)",
                 " which is not currently showing.",
