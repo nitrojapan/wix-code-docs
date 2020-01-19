@@ -248,7 +248,7 @@
               [ "Because `onReady()` code may be run twice, you need to be aware that if your\n `onReady()` code causes a side effect, such as inserting an item into a collection,\n that side effect might happen twice. To avoid a side effect from happening twice,\n use the [`wixWindow.rendering.env`](wix-window.rendering.html#env) to determine \n where your code is being executed." ] } },
       { "name": "rendered",
         "labels":
-          [ "new" ],
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "elementId",
@@ -280,7 +280,7 @@
                     [ "let isRendered = $w.rendered(\"myElement\");  // true" ],
                   "extra":
                     {  } },
-                { "title": "Check whether an element exists before selecting it",
+                { "title": "Check whether an element exists before selecting it and running code",
                   "body":
                     [ "// Site code",
                       "",
@@ -290,7 +290,7 @@
                       "    console.log(\"Selected element does not exist on this page\");",
                       "}  " ],
                   "extra":
-                    { "description": "In this example, we added code to the Site tab to set the text of a text element that exists on most pages of our site. We set the text only after checking whether the element exists on the page." } } ],
+                    { "description": "We added code to the Site tab to define the text of a text element that exists on most pages of our site. We first check if the element exists on the current page before running the code that defines the text." } } ],
             "extra":
               {  } },
         "extra":
