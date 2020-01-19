@@ -290,7 +290,7 @@
                       "    console.log(\"Selected element does not exist on this page\");",
                       "}  " ],
                   "extra":
-                    { "description": "We added code to the Site tab to define the text of a text element that exists on most pages of our site. We first check if the element exists on the current page before running the code that defines the text." } } ],
+                    { "description": "We added code to the Site tab to define the text of a text element that exists on most pages of our site. We first check if the element exists on the current page before running the code." } } ],
             "extra":
               {  } },
         "extra":
