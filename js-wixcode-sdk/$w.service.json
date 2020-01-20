@@ -281,7 +281,16 @@
                   "body":
                     [ "let isRendered = $w.rendered(\"#myElement\");  // true" ],
                   "extra":
-                    { "description": "* @snippet [$w-rendered-mobile-scenario.es6=Check whether an element exists on the mobile version of a site]\n This example demonstrates how to prevent an error when running code on a button that exists on the desktop version of a site, but not on the mobile version. On the desktop site, the button will be enabled. On the mobile site, a message will log to the console." } },
+                    {  } },
+                { "title": "Check whether an element exists on the mobile version of a site",
+                  "body":
+                    [ "if($w.rendered(\"#myButton\")) {",
+                      "    $w(\"#myButton\").enable();",
+                      "} else {",
+                      "    console.log(\"Selected element does not exist in mobile site\");",
+                      "}  " ],
+                  "extra":
+                    { "description": "This example demonstrates how to prevent an error when running code on a button that exists on the desktop version of a site, but not on the mobile version. On the desktop site, the button will be enabled. On the mobile site, a message will log to the console." } },
                 { "title": "Check whether an element exists on the current page before running site code",
                   "body":
                     [ "// Site code",
