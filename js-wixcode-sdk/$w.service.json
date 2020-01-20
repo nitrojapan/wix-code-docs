@@ -271,16 +271,18 @@
                 " An element might not be in the DOM if it is in a [slide]($w.Slide.html) or a [state]($w.State.html)",
                 " which is not currently showing.",
                 "",
-                " `rendered()` is useful for running code from the <a href=\"https://support.wix.com/en/article/corvid-working-in-the-code-panel#page-and-site-tabs-1\" target=\"_blank\">Site tab</a> on elements that exist ",
-                " on some, but not all, pages on your site. You can prevent errors by using `rendered()` to check whether the element exists before running code." ],
+                " You can prevent errors by using `rendered()` to check whether an element exists before running code on it. `rendered()` is useful in the following scenarios:",
+                "",
+                " + An element exists in the desktop version of your site but not in the mobile version.",
+                " + An identical element exists on some, but not all, pages in your site and you are running code on the element from the <a href=\"https://support.wix.com/en/article/corvid-working-in-the-code-panel#page-and-site-tabs-1\" target=\"_blank\">Site tab</a>." ],
             "links": [],
             "examples":
               [ { "title": "Get an element's rendered status",
                   "body":
                     [ "let isRendered = $w.rendered(\"#myElement\");  // true" ],
                   "extra":
-                    {  } },
-                { "title": "Check whether an element exists before selecting it and running code",
+                    { "description": "* @snippet [$w-rendered-mobile-scenario.es6=Check whether an element exists on the mobile version of a site]\n This example demonstrates how to prevent an error when running code on a button that exists on the desktop version of a site, but not on the mobile version. On the desktop site, the button will be enabled. On the mobile site, a message will log to the console." } },
+                { "title": "Check whether an element exists on the current page before running site code",
                   "body":
                     [ "// Site code",
                       "",
@@ -290,7 +292,7 @@
                       "    console.log(\"Selected element does not exist on this page\");",
                       "}  " ],
                   "extra":
-                    { "description": "In this example, we added code to the Site tab to define the text of a text element that exists on most pages of our site. We first check if the element exists on the current page before running the code." } } ],
+                    { "description": "This example demonstrates how to prevent errors when running code on a text element that exists in most, but not all, pages of a site. On the pages with the element, the text will be defined. On pages without the element, a message will log to the console." } } ],
             "extra":
               {  } },
         "extra":
@@ -336,7 +338,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 569,
+          [ { "lineno": 568,
               "filename": "Repeater.es6" } ],
         "docs":
           { "description":
@@ -499,7 +501,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 429,
+          [ { "lineno": 428,
               "filename": "Repeater.es6" } ],
         "docs":
           { "description":
@@ -520,7 +522,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 524,
+          [ { "lineno": 523,
               "filename": "Repeater.es6" } ],
         "docs":
           { "description":
