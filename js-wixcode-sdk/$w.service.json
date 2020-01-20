@@ -287,7 +287,7 @@
                     [ "if($w.rendered(\"#myButton\")) {",
                       "    $w(\"#myButton\").enable();",
                       "} else {",
-                      "    console.log(\"Selected element does not exist in mobile site\");",
+                      "    console.log(\"Selected element does not exist on mobile site\");",
                       "}  " ],
                   "extra":
                     { "description": "This example demonstrates how to prevent an error when running code on a button that exists on the desktop version of a site, but not on the mobile version. On the desktop site, the button will be enabled. On the mobile site, a message will log to the console." } },
