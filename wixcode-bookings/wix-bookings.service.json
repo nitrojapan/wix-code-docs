@@ -1,6 +1,7 @@
 { "name": "wix-bookings",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 5,
       "filename": "bookings.js" },
@@ -281,7 +282,8 @@
           { "notes":
               [ "You can checkout bookings for 1-on-1 Sessions (Appointments) from any type of Wix account.\n To checkout bookings for Ongoing Sessions (Classes) or a Set of Sessions (Courses) you need to\n <a href=\"https://support.wix.com/en/article/upgrading-wix-bookings\" target=\"_blank\">upgrade to a Business Premium Plan</a>." ] } },
       { "name": "getCheckoutOptions",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "slotId",
@@ -291,9 +293,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ { "name": "Array",
-                      "typeParams":
-                        [ "wix-bookings.CheckoutOption" ] } ] },
+                  [ "wix-bookings.CheckoutOption" ] },
             "doc": "Fulfilled - The available payment options for the service and the logged-in user.\nRejected - Checkout payment options error object." },
         "locations":
           [ { "lineno": 328,
@@ -327,8 +327,8 @@
                       "     let firstOptionType = checkoutOptions[0].type;",
                       "  });",
                       "",
-                      "/* A list of checkout options:  ",
-                      " * [",
+                      "/* An object containing checkout options:  ",
+                      " * {",
                       " *   { ",
                       " *     \"type\":\"wixPay_Online\"",
                       " *   },",
@@ -351,7 +351,7 @@
                       " *     \"remainingCredits\":58,",
                       " *     \"totalCredits\":60",
                       " *   }",
-                      " * ]",
+                      " * }",
                       " */" ],
                   "extra":
                     {  } } ],
@@ -750,7 +750,7 @@
           [ { "lineno": 148,
               "filename": "bookings.js" } ],
         "docs":
-          { "summary": "An array of objects returned after calling [`getCheckoutOptions()`](#getCheckoutOptions)\n containing information about the available payment options for the service and the logged-in user.",
+          { "summary": "An object returned after calling [`getCheckoutOptions()`](#getCheckoutOptions)\n containing information about the available payment options for the service and the logged-in user.",
             "links": [],
             "examples":
               [ { "title": "Get the payment options for the service that are available to the logged-in user",
@@ -766,8 +766,8 @@
                       "     let firstOptionType = checkoutOptions[0].type;",
                       "  });",
                       "",
-                      "/* A list of checkout options:  ",
-                      " * [",
+                      "/* An object containing checkout options:  ",
+                      " * {",
                       " *   { ",
                       " *     \"type\":\"wixPay_Online\"",
                       " *   },",
@@ -790,7 +790,7 @@
                       " *     \"remainingCredits\":58,",
                       " *     \"totalCredits\":60",
                       " *   }",
-                      " * ]",
+                      " * }",
                       " */" ],
                   "extra":
                     {  } },
@@ -803,13 +803,13 @@
                       "let formFieldValues = [",
                       "  {",
                       "    \"_id\": \"00000000-0000-0000-0000-000000000001\", // name field ID",
-                      "    \"value\": \"Marta Santora\"",
+                      "    \"value\": \"Joe Smith\"",
                       "  }, {",
                       "    \"_id\": \"00000000-0000-0000-0000-000000000003\", // Phone field ID",
                       "    \"value\": \"0987654321\"",
                       "  },{",
                       "    \"_id\": \"00000000-0000-0000-0000-000000000002\", // email field ID",
-                      "    \"value\": \"marta@santora.com\"",
+                      "    \"value\": \"abc@abc\"",
                       "  }",
                       "];",
                       "",
@@ -898,7 +898,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "FormField",
         "locations":
           [ { "lineno": 118,
@@ -1001,13 +1002,13 @@
                       "let formFieldValues = [",
                       "  {",
                       "    \"_id\": \"00000000-0000-0000-0000-000000000001\", // name field ID",
-                      "    \"value\": \"Marta Santora\"",
+                      "    \"value\": \"Joe Smith\"",
                       "  }, {",
                       "    \"_id\": \"00000000-0000-0000-0000-000000000003\", // Phone field ID",
                       "    \"value\": \"0987654321\"",
                       "  },{",
                       "    \"_id\": \"00000000-0000-0000-0000-000000000002\", // email field ID",
-                      "    \"value\": \"marta@santora.com\"",
+                      "    \"value\": \"abc@abc\"",
                       "  }",
                       "];",
                       "",
@@ -1076,7 +1077,8 @@
               "doc": "Type of the payment. Valid options are: \n\n  + `\"wixPay_Online\"` for online collections\n  + `\"wixPay_Offline\"` for offline collections\n  + `\"package\"` for a package-type paid plan\n  + `\"membership\"` for a membership-type paid plan" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ServiceAvailability",
         "locations":
           [ { "lineno": 85,
