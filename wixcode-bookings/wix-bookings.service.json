@@ -290,8 +290,13 @@
               "type": "string",
               "doc": "The slot ID of the service for which to list the possible checkout options." } ],
         "ret":
-          { "type": "Promise",
-            "doc": "Rejected - Checkout payment options error object." },
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ { "name": "Array",
+                      "typeParams":
+                        [ "wix-bookings.CheckoutOption" ] } ] },
+            "doc": "Fulfilled - The available payment options for the service and the logged-in user.\nRejected - Checkout payment options error object." },
         "locations":
           [ { "lineno": 328,
               "filename": "bookings.js" } ],
@@ -899,8 +904,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "FormField",
         "locations":
           [ { "lineno": 118,
