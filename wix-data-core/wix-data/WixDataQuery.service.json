@@ -1,8 +1,7 @@
 { "name": "WixDataQuery",
   "memberOf": "wix-data",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 12,
       "filename": "query.es6" },
@@ -2227,8 +2226,7 @@
         "extra":
           {  } },
       { "name": "limit",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "limit",
