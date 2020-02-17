@@ -6,7 +6,8 @@
       "$w.PlayableMixin",
       "$w.ClickableMixin",
       "$w.ContainableMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 77,
       "filename": "Slideshow.es6" },
@@ -154,7 +155,8 @@
         "extra":
           {  } },
       { "name": "slides",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "get": true,
         "set": false,
         "type":
@@ -171,7 +173,7 @@
                 " they are numbered starting from 1 in the Editor." ],
             "links": [],
             "examples":
-              [ { "title": "Get a slidshow's slides",
+              [ { "title": "Get a slideshow's slides",
                   "body":
                     [ "let mySlides = $w(\"#mySlideshow\").slides;" ],
                   "extra":

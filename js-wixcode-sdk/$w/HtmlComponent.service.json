@@ -2,12 +2,21 @@
   "memberOf": "$w",
   "mixes":
     [ "$w.IFrame" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 18,
       "filename": "HtmlComponent.es6" },
   "docs":
-    { "summary": "A container for internal or external HTML code. Messages can be sent\n from your page code to the code in an HTML component and from the HTML\n component to your page code using the [`postMessage()`](#postMessage) and\n [`onMessage()`](#onMessage) functions. To learn more about what code an HTML\n component can hold, see <a href=\"https://support.wix.com/en/article/using-iframes-to-display-visible-content-on-your-site\" target=\"_blank\">here</a>.\n\n For an overview of working with an HTML Component using code, see <a href=\"https://support.wix.com/en/article/working-with-the-html-element\" target=\"_blank\">Working with the HTML Element</a>.",
+    { "summary": "A container for internal or external HTML code.",
+      "description":
+        [ "Messages can be sent",
+          " from your page code to the code in an HTML component and from the HTML",
+          " component to your page code using the [`postMessage()`](#postMessage) and",
+          " [`onMessage()`](#onMessage) functions. To learn more about what code an HTML",
+          " component can hold, see <a href=\"https://support.wix.com/en/article/using-iframes-to-display-visible-content-on-your-site\" target=\"_blank\">here</a>.",
+          "",
+          " For an overview of working with an HTML Component using code, see <a href=\"https://support.wix.com/en/article/working-with-the-html-element\" target=\"_blank\">Working with the HTML Element</a>." ],
       "links": [],
       "examples": [],
       "extra":
@@ -19,9 +28,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 84,
+          [ { "lineno": 86,
               "filename": "HtmlComponent.es6" },
-            { "lineno": 109,
+            { "lineno": 111,
               "filename": "HtmlComponent.es6" } ],
         "docs":
           { "summary": "Sets or gets whether the HTML Component displays scrollbars.",
@@ -59,9 +68,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 38,
+          [ { "lineno": 40,
               "filename": "HtmlComponent.es6" },
-            { "lineno": 57,
+            { "lineno": 59,
               "filename": "HtmlComponent.es6" } ],
         "docs":
           { "summary": "Sets or gets the URL of the HTML Component's code.",
@@ -98,7 +107,7 @@
         "ret":
           { "type": "$w.HtmlComponent" },
         "locations":
-          [ { "lineno": 298,
+          [ { "lineno": 300,
               "filename": "HtmlComponent.es6" } ],
         "docs":
           { "summary": "Allows the HTML Component to be put into full screen mode.",
@@ -127,7 +136,7 @@
           { "type": "$w.HtmlComponent",
             "doc": "The HTML Code element that triggered the event." },
         "locations":
-          [ { "lineno": 228,
+          [ { "lineno": 230,
               "filename": "HtmlComponent.es6" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the HTML Component\n sends a message.",
@@ -245,7 +254,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 141,
+          [ { "lineno": 143,
               "filename": "HtmlComponent.es6" } ],
         "docs":
           { "summary": "Sends a message to the HTML Component.",
