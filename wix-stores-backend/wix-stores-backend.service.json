@@ -3715,33 +3715,6 @@
         "extra":
           {  },
         "labels": [] },
-      { "name": "InventoryItemVariantItems",
-        "locations":
-          [ { "lineno": 47,
-              "filename": "inventory.js" } ],
-        "docs":
-          { "summary": "An object representing a product inventory item's variant item.",
-            "links":
-              [ "[InventoryItem](#InventoryItem)",
-                "[updateInventoryVariantById( )](#updateInventoryVariantById)",
-                "[updateInventoryVariantByExternalId( )](#updateInventoryVariantByExternalId)" ],
-            "examples": [],
-            "extra":
-              {  } },
-        "members":
-          [ { "name": "variantId",
-              "type": "string",
-              "doc": "Unique product inventory item's variant ID." },
-            { "name": "inStock",
-              "type": "boolean",
-              "doc": "Whether the variant is in stock at the store. Used when `trackQuantity` is false. If `trackQuantity` is true, `inStock` is based on the actual tracked `quantity`." },
-            { "name": "quantity",
-              "type": "number",
-              "doc": "In-stock quantity at the store. Used when `trackQuantity` is true. If `trackQuantity` is false, undefined." } ],
-        "extra":
-          {  },
-        "labels":
-          [ "removed" ] },
       { "name": "InventoryItemVariants",
         "locations":
           [ { "lineno": 44,
