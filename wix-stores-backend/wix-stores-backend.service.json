@@ -1,7 +1,6 @@
 { "name": "wix-stores-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "products.js" },
@@ -1713,8 +1712,7 @@
           { "notes":
               [ "The `Manage Variants` field for the product must be set to true to reset variant data." ] } },
       { "name": "updateInventoryVariantByExternalId",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "inventoryExternalId",
@@ -1851,8 +1849,7 @@
         "extra":
           {  } },
       { "name": "updateInventoryVariantById",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "inventoryId",
@@ -3564,8 +3561,7 @@
               "doc": "Unique identifier for the inventory item." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItemVariantInfo",
         "locations":
           [ { "lineno": 24,
@@ -3692,8 +3688,7 @@
               "doc": "Inventory item variants." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItemVariantItem",
         "locations":
           [ { "lineno": 54,
@@ -3719,8 +3714,7 @@
               "doc": "In-stock quantity at the store. Used when `trackQuantity` is true. If `trackQuantity` is false, undefined." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "InventoryItemVariantItems",
         "locations":
           [ { "lineno": 47,
@@ -3770,8 +3764,7 @@
               "doc": "Variant items." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "LineItem",
         "locations":
           [ { "lineno": 94,
