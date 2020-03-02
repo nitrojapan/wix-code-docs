@@ -1,7 +1,6 @@
 { "name": "wix-stores-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "products.js" },
@@ -1711,8 +1710,7 @@
           { "notes":
               [ "The `Manage Variants` field for the product must be set to true to reset variant data." ] } },
       { "name": "updateInventoryVariantByExternalId",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "inventoryExternalId",
@@ -2009,8 +2007,7 @@
         "extra":
           {  } },
       { "name": "updateInventoryVariantById",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "inventoryId",
@@ -4292,8 +4289,7 @@
               "doc": "Unique identifier for the inventory item." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItemVariantInfo",
         "locations":
           [ { "lineno": 53,
@@ -4713,8 +4709,7 @@
               "doc": "Inventory item variants." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "InventoryItemVariantItem",
         "locations":
           [ { "lineno": 113,
@@ -5404,8 +5399,7 @@
               "doc": "The total quantity of the the order's line items." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PagingOptions",
         "locations":
           [ { "lineno": 313,
