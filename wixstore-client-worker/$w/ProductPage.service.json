@@ -24,7 +24,7 @@
           { "type": "$w.ProductPage.Product",
             "doc": "The value's entered in the custom text fields." },
         "locations":
-          [ { "lineno": 223,
+          [ { "lineno": 244,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the values entered in the product's custom text fields.",
@@ -48,7 +48,7 @@
                   [ "$w.ProductPage.Product" ] },
             "doc": "Fulfilled - Information about the current product." },
         "locations":
-          [ { "lineno": 210,
+          [ { "lineno": 231,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the all the information associated with the current product.",
@@ -231,7 +231,7 @@
         "labels": [] },
       { "name": "Product",
         "locations":
-          [ { "lineno": 174,
+          [ { "lineno": 195,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product in a store.",
@@ -441,7 +441,7 @@
               "type": "number",
               "doc": "Product weight." },
             { "name": "variants",
-              "type": "$w.ProductPage.ProductVariants",
+              "type": "$w.ProductPage.Variants",
               "doc": "Product variants." },
             { "name": "_updatedDate",
               "type": "Date",
@@ -457,7 +457,8 @@
               "doc": "List of product customization fields." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductAdditionalInfoSection",
         "locations":
           [ { "lineno": 40,
@@ -482,7 +483,7 @@
         "labels": [] },
       { "name": "ProductChoices",
         "locations":
-          [ { "lineno": 161,
+          [ { "lineno": 182,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product variant's option choices.",
@@ -542,8 +543,7 @@
               "doc": "Discount value. The discount value cannot be greater than the price of the product or the variant." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductOption",
         "locations":
           [ { "lineno": 84,
@@ -669,7 +669,7 @@
         "labels": [] },
       { "name": "ProductVariantInfo",
         "locations":
-          [ { "lineno": 145,
+          [ { "lineno": 166,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product's variant information used when creating or updating variants.",
@@ -736,7 +736,8 @@
               "doc": "Product variant information." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ProductVariants",
         "locations":
           [ { "lineno": 125,
@@ -759,6 +760,7 @@
               "doc": "Variant items." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "removed" ] } ],
   "extra":
     {  } }
