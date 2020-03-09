@@ -3,8 +3,7 @@
   "mixes":
     [ "$w.Element",
       "$w.HiddenCollapsedMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "wixCodeDoc.js" },
@@ -799,8 +798,7 @@
               "doc": "Whether the variant is visible in the store." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "VariantItem",
         "locations":
           [ { "lineno": 135,
@@ -824,8 +822,7 @@
               "doc": "Variant information." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Variants",
         "locations":
           [ { "lineno": 126,
@@ -852,7 +849,6 @@
               "doc": "Total number of variants with the specified choices." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }
