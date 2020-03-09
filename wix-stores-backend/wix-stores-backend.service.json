@@ -1,7 +1,6 @@
 { "name": "wix-stores-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "products.js" },
@@ -1762,8 +1761,7 @@
         "extra":
           {  } },
       { "name": "updateVariantData",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -4146,8 +4144,7 @@
               "doc": "Product variants." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductAdditionalInfoSection",
         "locations":
           [ { "lineno": 89,
@@ -5355,8 +5352,7 @@
               "doc": "Total number of variants with the specified choices." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  },
   "menuSections": "APIs",
