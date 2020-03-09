@@ -23,7 +23,7 @@
           { "type": "$w.ProductPage.Product",
             "doc": "The value's entered in the custom text fields." },
         "locations":
-          [ { "lineno": 258,
+          [ { "lineno": 238,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the values entered in the product's custom text fields.",
@@ -47,7 +47,7 @@
                   [ "$w.ProductPage.Product" ] },
             "doc": "Fulfilled - Information about the current product." },
         "locations":
-          [ { "lineno": 245,
+          [ { "lineno": 225,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the all the information associated with the current product.",
@@ -230,7 +230,7 @@
         "labels": [] },
       { "name": "Product",
         "locations":
-          [ { "lineno": 209,
+          [ { "lineno": 189,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product in a store.",
@@ -481,7 +481,7 @@
         "labels": [] },
       { "name": "ProductChoices",
         "locations":
-          [ { "lineno": 196,
+          [ { "lineno": 176,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product variant's option choices.",
@@ -667,7 +667,7 @@
         "labels": [] },
       { "name": "ProductVariantInfo",
         "locations":
-          [ { "lineno": 180,
+          [ { "lineno": 160,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product's variant information used when creating or updating variants.",
