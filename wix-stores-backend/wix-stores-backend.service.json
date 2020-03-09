@@ -1,7 +1,6 @@
 { "name": "wix-stores-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "products.js" },
@@ -246,8 +245,7 @@
         "extra":
           {  } },
       { "name": "createProduct",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "productInfo",
@@ -1146,8 +1144,7 @@
         "extra":
           {  } },
       { "name": "getProductVariants",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -3859,8 +3856,7 @@
               "doc": "Number of variants to skip before the retrieved variants. Defaults to 0." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Product",
         "locations":
           [ { "lineno": 18,
@@ -4833,8 +4829,7 @@
               "doc": "Paging options." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ShippingInfo",
         "locations":
           [ { "lineno": 82,
@@ -5211,8 +5206,7 @@
               "doc": "Whether the variant is visible in the store." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "VariantItem",
         "locations":
           [ { "lineno": 328,
