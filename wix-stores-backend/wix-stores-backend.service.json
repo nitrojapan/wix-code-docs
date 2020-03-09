@@ -4725,36 +4725,6 @@
         "extra":
           {  },
         "labels": [] },
-      { "name": "ProductVariantItem",
-        "locations":
-          [ { "lineno": 415,
-              "filename": "products.js" } ],
-        "docs":
-          { "summary": "An object representing a product's variant item.",
-            "links":
-              [ "[getProduct( )](#getProduct)",
-                "[Product](#Product)",
-                "[getProductVariants( )](#getProductVariants)" ],
-            "examples": [],
-            "extra":
-              {  } },
-        "members":
-          [ { "name": "id",
-              "type": "string",
-              "doc": "Unique product variant ID." },
-            { "name": "choices",
-              "type": "wix-stores-backend.ProductChoices",
-              "doc": "Product variant option choices." },
-            { "name": "variant",
-              "type":
-                { "name": "Array",
-                  "typeParams":
-                    [ "wix-stores-backend.ProductVariantInfo" ] },
-              "doc": "Product variant information." } ],
-        "extra":
-          {  },
-        "labels":
-          [ "removed" ] },
       { "name": "ProductVariantOptions",
         "locations":
           [ { "lineno": 299,
@@ -4871,30 +4841,6 @@
         "extra":
           {  },
         "labels": [] },
-      { "name": "ProductVariants",
-        "locations":
-          [ { "lineno": 55,
-              "filename": "products.js" } ],
-        "docs":
-          { "summary": "An object representing a product's variants.",
-            "links":
-              [ "[createProduct( )](#createProduct)",
-                "[Product](#Product)",
-                "[getProductVariants( )](#getProductVariants)" ],
-            "examples": [],
-            "extra":
-              {  } },
-        "members":
-          [ { "name": "items",
-              "type":
-                { "name": "Array",
-                  "typeParams":
-                    [ "wix-stores-backend.ProductVariantItem" ] },
-              "doc": "Variant items." } ],
-        "extra":
-          {  },
-        "labels":
-          [ "removed" ] },
       { "name": "ShippingInfo",
         "locations":
           [ { "lineno": 82,
