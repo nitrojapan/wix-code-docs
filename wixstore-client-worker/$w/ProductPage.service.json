@@ -24,7 +24,7 @@
           { "type": "$w.ProductPage.Product",
             "doc": "The value's entered in the custom text fields." },
         "locations":
-          [ { "lineno": 244,
+          [ { "lineno": 243,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the values entered in the product's custom text fields.",
@@ -48,7 +48,7 @@
                   [ "$w.ProductPage.Product" ] },
             "doc": "Fulfilled - Information about the current product." },
         "locations":
-          [ { "lineno": 231,
+          [ { "lineno": 230,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the all the information associated with the current product.",
@@ -231,7 +231,7 @@
         "labels": [] },
       { "name": "Product",
         "locations":
-          [ { "lineno": 195,
+          [ { "lineno": 194,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product in a store.",
@@ -457,8 +457,7 @@
               "doc": "List of product customization fields." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductAdditionalInfoSection",
         "locations":
           [ { "lineno": 40,
@@ -483,7 +482,7 @@
         "labels": [] },
       { "name": "ProductChoices",
         "locations":
-          [ { "lineno": 182,
+          [ { "lineno": 181,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product variant's option choices.",
@@ -669,7 +668,7 @@
         "labels": [] },
       { "name": "ProductVariantInfo",
         "locations":
-          [ { "lineno": 166,
+          [ { "lineno": 165,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product's variant information used when creating or updating variants.",
@@ -761,6 +760,58 @@
         "extra":
           {  },
         "labels":
-          [ "removed" ] } ],
+          [ "removed" ] },
+      { "name": "VariantItem",
+        "locations":
+          [ { "lineno": 134,
+              "filename": "wixCodeDoc.js" } ],
+        "docs":
+          { "summary": "An object representing a product variant item.",
+            "links":
+              [ "[getProductVariants()](#getProductVariants)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Unique variant ID." },
+            { "name": "choices",
+              "type": "$w.ProductPage.ProductChoices",
+              "doc": "The choices of the retrieved variant." },
+            { "name": "variant",
+              "type": "$w.ProductPage.VariantInfo",
+              "doc": "Variant information." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "Variants",
+        "locations":
+          [ { "lineno": 126,
+              "filename": "wixCodeDoc.js" } ],
+        "docs":
+          { "summary": "An object representing product variants.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "items",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "$w.ProductPage.VariantItem" ] },
+              "doc": "List of variant items that match the specified choices or variant IDs." },
+            { "name": "length",
+              "type": "number",
+              "doc": "Number of items in the current results page." },
+            { "name": "totalCount",
+              "type": "number",
+              "doc": "Total number of variants with the specified choices." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] } ],
   "extra":
     {  } }
