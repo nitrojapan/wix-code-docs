@@ -1,6 +1,7 @@
 { "name": "wix-window",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 14,
       "filename": "window.es6" },
@@ -137,7 +138,7 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 1345,
+          [ { "lineno": 1344,
               "filename": "window.es6" } ],
         "docs":
           { "summary": "Gets the HTTP referrer header field.",
@@ -539,7 +540,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the modal window is closed.\nRejected - The error that caused the rejection." },
         "locations":
-          [ { "lineno": 999,
+          [ { "lineno": 998,
               "filename": "window.es6" } ],
         "docs":
           { "summary": "Opens a modal window that displays the specified web page.",
@@ -604,7 +605,7 @@
                   [ "Object" ] },
             "doc": "Fulfilled - The data returned from the modal window.\nRejected - The error that caused the rejection." },
         "locations":
-          [ { "lineno": 1056,
+          [ { "lineno": 1055,
               "filename": "window.es6" } ],
         "docs":
           { "summary": "Sends a message to the page's parent.",
@@ -789,7 +790,8 @@
         "extra":
           {  } },
       { "name": "trackEvent",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "eventName",
@@ -810,7 +812,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 923,
+          [ { "lineno": 913,
               "filename": "window.es6" } ],
         "docs":
           { "summary": "Sends a tracking event to external analytics tools.",
@@ -833,7 +835,16 @@
                 " + `\"CheckoutStep\"`: [parameters](wix-window.trackingParameters.html#CheckoutStepEvent): When a user completes a custom checkout step. (Google Analytics only)",
                 " + `\"Purchase\"`: [parameters](wix-window.trackingParameters.html#PurchaseEvent): When the checkout process is complete.",
                 " + `\"Lead\"`: When a user subscribes to a newsletter or submits a contact form.",
-                " + `\"CustomEvent\"`: [parameters](wix-window.trackingParameters.html#CustomEvent): When a user performs an event not listed above." ],
+                " + `\"CustomEvent\"`: [parameters](wix-window.trackingParameters.html#CustomEvent): When a user performs an event not listed above.",
+                "   The `CustomEvent` object contains one required property, `event`, and any number of",
+                "   custom properties.",
+                "",
+                "   When sending a custom event to Google Analytics, include following parameters:",
+                "",
+                "     + `eventCategory`: string: object that was interacted with",
+                "     + `eventAction`: string: type of interaction",
+                "     + `eventLabel` (optional): string: event category",
+                "     + `eventValue` (optional): integer: numeric value associated with the event" ],
             "links": [],
             "examples":
               [ { "title": "Send a trackEvent with parameters",
@@ -890,7 +901,7 @@
   "messages":
     [ { "name": "OpenModalOptions",
         "locations":
-          [ { "lineno": 990,
+          [ { "lineno": 989,
               "filename": "window.es6" } ],
         "docs":
           { "summary": "An object used when opening a modal window.",
