@@ -24,7 +24,7 @@
           { "type": "$w.ProductPage.Product",
             "doc": "The value's entered in the custom text fields." },
         "locations":
-          [ { "lineno": 243,
+          [ { "lineno": 258,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the values entered in the product's custom text fields.",
@@ -48,7 +48,7 @@
                   [ "$w.ProductPage.Product" ] },
             "doc": "Fulfilled - Information about the current product." },
         "locations":
-          [ { "lineno": 230,
+          [ { "lineno": 245,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the all the information associated with the current product.",
@@ -231,7 +231,7 @@
         "labels": [] },
       { "name": "Product",
         "locations":
-          [ { "lineno": 194,
+          [ { "lineno": 209,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product in a store.",
@@ -457,8 +457,7 @@
               "doc": "List of product customization fields." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ProductAdditionalInfoSection",
         "locations":
           [ { "lineno": 40,
@@ -483,7 +482,7 @@
         "labels": [] },
       { "name": "ProductChoices",
         "locations":
-          [ { "lineno": 181,
+          [ { "lineno": 196,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product variant's option choices.",
@@ -669,7 +668,7 @@
         "labels": [] },
       { "name": "ProductVariantInfo",
         "locations":
-          [ { "lineno": 165,
+          [ { "lineno": 180,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product's variant information used when creating or updating variants.",
@@ -762,14 +761,54 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "VariantInfo",
+        "locations":
+          [ { "lineno": 145,
+              "filename": "wixCodeDoc.js" } ],
+        "docs":
+          { "summary": "An object containing variant information to use when creating or updating variants.",
+            "links":
+              [ "[Product](#Product)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "currency",
+              "type": "string",
+              "doc": "Variant currency." },
+            { "name": "price",
+              "type": "number",
+              "doc": "Variant price. The variant price must be greater than its discount. If the variant price has been updated, changes to the product price do not affect the variant price." },
+            { "name": "discountedPrice",
+              "type": "number",
+              "doc": "Discounted variant price." },
+            { "name": "formattedPrice",
+              "type": "string",
+              "doc": "Variant price formatted with the currency." },
+            { "name": "formattedDiscountedPrice",
+              "type": "string",
+              "doc": "Discounted variant price formatted with the currency." },
+            { "name": "weight",
+              "type": "number",
+              "doc": "Variant weight." },
+            { "name": "sku",
+              "type": "string",
+              "doc": "Variant stock keeping unit value." },
+            { "name": "visible",
+              "type": "boolean",
+              "doc": "Whether the variant is visible in the store." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "VariantItem",
         "locations":
-          [ { "lineno": 134,
+          [ { "lineno": 135,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a product variant item.",
             "links":
-              [ "[getProductVariants()](#getProductVariants)" ],
+              [ "[Product](#Product)" ],
             "examples": [],
             "extra":
               {  } },
@@ -786,14 +825,15 @@
         "extra":
           {  },
         "labels":
-          [ "new" ] },
+          [ "changed" ] },
       { "name": "Variants",
         "locations":
           [ { "lineno": 126,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing product variants.",
-            "links": [],
+            "links":
+              [ "[Product](#Product)" ],
             "examples": [],
             "extra":
               {  } },
@@ -813,6 +853,6 @@
         "extra":
           {  },
         "labels":
-          [ "new" ] } ],
+          [ "changed" ] } ],
   "extra":
     {  } }

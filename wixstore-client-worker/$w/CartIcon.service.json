@@ -3,10 +3,9 @@
   "mixes":
     [ "$w.Element",
       "$w.HiddenCollapsedMixin" ],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
-    { "lineno": 253,
+    { "lineno": 268,
       "filename": "wixCodeDoc.js" },
   "docs":
     { "summary": "An icon that leads users to the shopping cart.",
@@ -105,8 +104,7 @@
         "extra":
           {  } },
       { "name": "addToCart",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "productID",
@@ -127,7 +125,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the product has been added to the cart." },
         "locations":
-          [ { "lineno": 290,
+          [ { "lineno": 305,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Adds a product to the shopping cart.",
@@ -219,7 +217,7 @@
   "messages":
     [ { "name": "AddToCartCustomTextField",
         "locations":
-          [ { "lineno": 280,
+          [ { "lineno": 295,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object used to pass a custom text field when adding a product to\n the shopping cart with options.",
@@ -238,8 +236,7 @@
               "doc": "Custom text field value." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "AddToCartItem",
         "locations":
           [ { "lineno": 18,
@@ -297,7 +294,7 @@
           [ "removed" ] },
       { "name": "AddToCartOptions",
         "locations":
-          [ { "lineno": 269,
+          [ { "lineno": 284,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object used when adding a product to the shopping cart with options.",
@@ -315,7 +312,6 @@
               "doc": "Custom custom\n text fields to use when adding the product to the cart." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }
