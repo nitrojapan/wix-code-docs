@@ -1,6 +1,7 @@
 { "name": "wix-stores",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "stores.js" },
@@ -64,7 +65,8 @@
         "extra":
           {  } },
       { "name": "getProductVariants",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -77,16 +79,16 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-stores.Variants" ] },
+                  [ "wix-stores.VariantItem" ] },
             "doc": "Fulfilled - The variants with the specified choices." },
         "locations":
-          [ { "lineno": 200,
+          [ { "lineno": 199,
               "filename": "stores.js" } ],
         "docs":
           { "summary": "Gets a product's available variants based on the specified option choices.",
             "description":
               [ "The `getProductVariants()` function returns a Promise that is resolved",
-                " to a `Variants` object when the product variants wßith the specified",
+                " to an array of  `VariantItem` objects when the product variants with the specified",
                 " choices or variant IDs are retrieved." ],
             "links": [],
             "examples": [],
@@ -98,7 +100,7 @@
   "messages":
     [ { "name": "MediaItem",
         "locations":
-          [ { "lineno": 217,
+          [ { "lineno": 216,
               "filename": "stores.js" } ],
         "docs":
           { "summary": "An object representing a media item.",
@@ -382,7 +384,7 @@
         "labels": [] },
       { "name": "VariantInfo",
         "locations":
-          [ { "lineno": 185,
+          [ { "lineno": 184,
               "filename": "stores.js" } ],
         "docs":
           { "summary": "An object containing variant information to use when creating or updating variants.",
@@ -497,7 +499,8 @@
               "doc": "Total number of variants with the specified choices." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "removed" ] } ],
   "extra":
     { "notes":
         [ "Additional Stores related APIs can be found in the [`CartIcon`]($w.CartIcon.html)\n and [`ProductPage`]($w.ProductPage.html) elements." ] },
