@@ -1,6 +1,7 @@
 { "name": "wix-stores-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "products.js" },
@@ -1145,7 +1146,8 @@
         "extra":
           {  } },
       { "name": "getProductVariants",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -1158,7 +1160,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-stores-backend.Variants" ] },
+                  [ "wix-stores-backend.VariantItem" ] },
             "doc": "Fulfilled - The variants with the specified choices." },
         "locations":
           [ { "lineno": 422,
@@ -1761,7 +1763,8 @@
         "extra":
           {  } },
       { "name": "updateVariantData",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "productId",
@@ -1777,7 +1780,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-stores-backend.Variants" ] },
+                  [ "wix-stores-backend.VariantItem" ] },
             "doc": "Fulfilled - The updated variant.\nRejected - Error message." },
         "locations":
           [ { "lineno": 545,
@@ -4140,11 +4143,15 @@
               "type": "string",
               "doc": "Product weight." },
             { "name": "variants",
-              "type": "wix-stores-backend.Variants",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-stores-backend.VariantItem" ] },
               "doc": "Product variants." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductAdditionalInfoSection",
         "locations":
           [ { "lineno": 89,
@@ -5352,7 +5359,8 @@
               "doc": "Total number of variants with the specified choices." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "removed" ] } ],
   "extra":
     {  },
   "menuSections": "APIs",
