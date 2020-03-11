@@ -36,7 +36,7 @@
           "    ![tag-name](images/customElement_tag.png \"Tag Name\")",
           " 1. Using Corvid, set up interactions between your site and the custom element. You can code event handling and additional functionality for the custom element.",
           "",
-          "You can also define [`seoMarkup`](https://www.wix.com/corvid/reference/$w.CustomElement.html#seoMarkup) for SEO support on custom elements.",
+          "You can also define [`seoMarkup`]($w.CustomElement.html#seoMarkup) for SEO support on custom elements.",
           "",
           "",
           " <h3 id=\"custom-element-limitations\">Limitations</h3>",
@@ -109,8 +109,7 @@
               [ "It is the user's responsibility to handle all aspects of SEO for the element, including managing the validity of the\n SEO markup opposite search engines." ] } } ],
   "operations":
     [ { "name": "on",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "eventName",
@@ -347,8 +346,7 @@
         "extra":
           {  } },
       { "name": "setAttribute",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "key",
