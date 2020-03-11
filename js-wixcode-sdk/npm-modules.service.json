@@ -1,6 +1,7 @@
 { "name": "npm-modules",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "npmModules.es6" },
@@ -56,6 +57,13 @@
           "   </tr>",
           "   </thead>",
           "   <tbody>",
+          "<tr>",
+          "\t        <td>Mar 09 2020</td>",
+          "\t        <td>priority-web-sdk</td>",
+          "\t        <td>2.2.7</td>",
+          "\t        <td>available</td>",
+          "\t        <td></td>",
+          "\t        </tr>",
           "<tr>",
           "\t        <td>Mar 03 2020</td>",
           "\t        <td>@ckeditor/ckeditor5-ui</td>",
