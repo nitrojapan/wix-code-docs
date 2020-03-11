@@ -56,9 +56,9 @@
         "set": true,
         "type": "string",
         "locations":
-          [ { "lineno": 107,
+          [ { "lineno": 105,
               "filename": "CustomElement.js" },
-            { "lineno": 107,
+            { "lineno": 105,
               "filename": "CustomElement.js" } ],
         "docs":
           { "summary": "Sets or gets the SEO markup to be rendered for search engine bots.",
@@ -109,7 +109,8 @@
               [ "It is the user's responsibility to handle all aspects of SEO for the element, including managing the validity of the\n SEO markup opposite search engines." ] } } ],
   "operations":
     [ { "name": "on",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "eventName",
@@ -121,9 +122,9 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 77,
+          [ { "lineno": 76,
               "filename": "CustomElement.js" },
-            { "lineno": 77,
+            { "lineno": 76,
               "filename": "CustomElement.js" } ],
         "docs":
           { "summary": "Registers a callback function in Corvid for an event triggered from the custom element.",
@@ -338,10 +339,9 @@
                       "}",
                       "export function menu_mouseOut(event) {",
                       " $w('myCustomElement').setAttribute('hoveringmenu', false);",
-                      "}",
-                      "" ],
+                      "}" ],
                   "extra":
-                    { "description": "<ahref=\"https://support.wix.com/en/article/corvid-example-coding-a-more-robust-custom-element\" target=\"_blank\">Learn more</a> about this example." } } ],
+                    {  } } ],
             "extra":
               {  } },
         "extra":
@@ -585,10 +585,9 @@
                       "}",
                       "export function menu_mouseOut(event) {",
                       " $w('myCustomElement').setAttribute('hoveringmenu', false);",
-                      "}",
-                      "" ],
+                      "}" ],
                   "extra":
-                    { "description": "<ahref = \"https://support.wix.com/en/article/corvid-example-coding-a-more-robust-custom-element\" target = \"_blank\" >Learn more</a> about this example." } } ],
+                    {  } } ],
             "extra":
               {  } },
         "extra":
