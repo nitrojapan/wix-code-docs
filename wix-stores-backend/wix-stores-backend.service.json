@@ -1,7 +1,7 @@
 { "name": "wix-stores-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "products.js" },
@@ -3329,13 +3329,14 @@
         "members":
           [ { "name": "(mediaId|url)",
               "type": "string",
-              "doc": "One of:\n\n + A Wix media item's ID, or\n + A media item's URL\n\n\n\n\n\n Use `mediaId` (preferred) for images hosted by Wix. Use `url` for other images. \n\n If you specify both, `mediaId` takes precedence. We recommend only specifying one to avoid unpredictable results. \n\n You can get the `mediaId` from: \n\n  + A query of the [`Product`](https://www.wix.com/corvid/reference/$w.ProductPage.html#Product) object. \n  + The [`UploadedFile`](https://www.wix.com/corvid/reference/$w.UploadButton.html#UploadedFile)'s properties when uploading an image." },
+              "doc": "One of:\n\n + A Wix media item's ID, or\n + A media item's URL\n\n\n\n\n\n Use `mediaId` (preferred) for images hosted by Wix. Use `url` for other images. \n\n If you specify both, `mediaId` takes precedence. We recommend only specifying one to avoid unpredictable results. \n\n You can get the `mediaId` from: \n\n  + A query of the [`Product`]($w.ProductPage.html#Product) object. \n  + The [`UploadedFile`]($w.UploadButton.html#UploadedFile)'s properties when uploading an image." },
             { "name": "choice",
               "type": "wix-stores-backend.Choice",
               "doc": "A choice of the product variant." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "MediaChoices",
         "locations":
           [ { "lineno": 344,
@@ -4111,7 +4112,7 @@
               "doc": "Product page relative URL." },
             { "name": "manageVariants",
               "type": "boolean",
-              "doc": "Indicates whether product variants are managed. Can be set to true only if the product has options. Once set to true, can be reset to false only if no variants exist. Use [`getProductVariants()`](https://www.wix.com/corvid/reference/wix-stores.html#getProductVariants) to check if variants exist. You cannot set `manageVariants` to true if more than 300 variants are defined." },
+              "doc": "Indicates whether product variants are managed. Can be set to true only if the product has options. Once set to true, can be reset to false only if no variants exist. Use [`getProductVariants()`](wix-stores.html#getProductVariants) to check if variants exist. You cannot set `manageVariants` to true if more than 300 variants are defined." },
             { "name": "customTextFields",
               "type":
                 { "name": "Array",
@@ -4135,7 +4136,8 @@
               "doc": "Product variants." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductAdditionalInfoSection",
         "locations":
           [ { "lineno": 89,
@@ -4251,7 +4253,7 @@
               "doc": "An object representing all the available options for a store product." },
             { "name": "manageVariants",
               "type": "boolean",
-              "doc": "Indicates whether product variants can be managed. Can be set to true only if the product has options. Once set to true, can be reset to false only if no variants exist. Use [`getProductVariants()`](https://www.wix.com/corvid/reference/wix-stores.html#getProductVariants) to check if variants exist.  You cannot set `manageVariants` to true if more than 300 variants are defined." },
+              "doc": "Indicates whether product variants can be managed. Can be set to true only if the product has options. Once set to true, can be reset to false only if no variants exist. Use [`getProductVariants()`](wix-stores.html#getProductVariants) to check if variants exist.  You cannot set `manageVariants` to true if more than 300 variants are defined." },
             { "name": "productType",
               "type": "string",
               "doc": "Product type. Currently only \"physical\" is supported for creating a new product using the API. Soon \"digital\" will also be supported." },
@@ -4263,7 +4265,8 @@
               "doc": "Whether the product is visible in the store." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductOption",
         "locations":
           [ { "lineno": 180,
@@ -4331,10 +4334,11 @@
         "members":
           [ { "name": "optionKey",
               "type": "wix-stores-backend.ProductOption",
-              "doc": "Name of the option. This key name\n is dependent on the options added to the product. For example, if a product has a size \n option, this key will be something like `\"Size\"`.\n \n `optionKey` is not case-sensitive. Therefore the values for the option keys \"`Size`\", \"`SIZE`\",\n and \"`size`\" are combined.\n\n An option cannot be changed if it has choices and variants. To change an option, reset its variants\n with [`resetVariantData()`](https://www.wix.com/corvid/reference/wix-stores-backend.html#resetVariantData).\n For each option, you can define a maximum of six choices." } ],
+              "doc": "Name of the option. This key name\n is dependent on the options added to the product. For example, if a product has a size \n option, this key will be something like `\"Size\"`.\n \n `optionKey` is not case-sensitive. Therefore the values for the option keys \"`Size`\", \"`SIZE`\",\n and \"`size`\" are combined.\n\n An option cannot be changed if it has choices and variants. To change an option, reset its variants\n with [`resetVariantData()`](wix-stores-backend.html#resetVariantData).\n For each option, you can define a maximum of six choices." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "ProductOptionsAvailability",
         "locations":
           [ { "lineno": 224,
